@@ -1,16 +1,6 @@
-/* Custom CSS & Animations */
-
-/* 
-========================================================================
-COLOR PALETTE OPTIONS
-Below are 3 professional color schemes formatted using CSS Variables.
-By default, OPTION A (Minimal & Professional) is active. 
-To change themes, simply uncomment the option you want and comment out the active one.
-========================================================================
-*/
 
 :root {
-    /* OPTION A — Minimal & Professional (ACTIVE) */
+   
     --color-bg: #f8fafc;          /* Moonlit Grey */
     --color-surface: #ffffff;
     --color-border: #e2e8f0;
@@ -33,55 +23,7 @@ To change themes, simply uncomment the option you want and comment out the activ
     --color-accent-text: #0f172a;
 }
 
-/*
-:root {
-    /* OPTION B — Modern Tech (High Contrast) * /
-    --color-bg: #ffffff;
-    --color-surface: #f3f4f6;
-    --color-border: #d1d5db;
-    --color-text-main: #111827;
-    --color-text-muted: #4b5563;
-    --color-accent: #06b6d4;      /* Cyber Teal * /
-    --color-accent-hover: #0d9488;
-    --color-accent-text: #ffffff;
-}
-.dark {
-    --color-bg: #050505;          /* Pure Dark Navy/Black * /
-    --color-surface: #121212;
-    --color-border: #262626;
-    --color-text-main: #fafafa;
-    --color-text-muted: #a3a3a3;
-    --color-accent: #2dd4bf;      /* Neon Teal * /
-    --color-accent-hover: #5eead4;
-    --color-accent-text: #050505;
-}
-*/
-
-/*
-:root {
-    /* OPTION C — Earthy & Unique (Premium) * /
-    --color-bg: #fdfbf7;          /* Warm off-white * /
-    --color-surface: #f4efe9;
-    --color-border: #e3d8cf;
-    --color-text-main: #2c2420;   /* Deep Brown * /
-    --color-text-muted: #73675f;
-    --color-accent: #4f6354;      /* Muted Sage Green * /
-    --color-accent-hover: #3d4d41;
-    --color-accent-text: #ffffff;
-}
-.dark {
-    --color-bg: #1c1a19;          /* Warm Charcoal * /
-    --color-surface: #262321;
-    --color-border: #3b3633;
-    --color-text-main: #e8e4e1;
-    --color-text-muted: #a69c96;
-    --color-accent: #809a87;      /* Lighter Sage * /
-    --color-accent-hover: #99b3a0;
-    --color-accent-text: #1c1a19;
-}
-*/
-
-/* Refined Button Animation */
+/* Animation button*/
 .btn-glow-effect {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -90,7 +32,7 @@ To change themes, simply uncomment the option you want and comment out the activ
     box-shadow: 0 8px 25px -6px color-mix(in srgb, var(--color-accent) 50%, transparent);
 }
 
-/* Glassmorphism utility classes for Dark/Light mode */
+/* Nav e glass effect */
 .glass-nav {
     background: color-mix(in srgb, var(--color-bg) 85%, transparent);
     backdrop-filter: blur(12px);

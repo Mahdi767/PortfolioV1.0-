@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
-            navbar.classList.add('shadow-sm', 'border-b', 'border-brand-lightBorder', 'dark:border-brand-darkBorder');
+            navbar.classList.add('shadow-sm', 'border-b', 'border-brand-border');
             navbar.classList.remove('py-4');
             navbar.classList.add('py-3');
         } else {
-            navbar.classList.remove('shadow-sm', 'border-b', 'border-brand-lightBorder', 'dark:border-brand-darkBorder');
+            navbar.classList.remove('shadow-sm', 'border-b', 'border-brand-border');
             navbar.classList.remove('py-3');
             navbar.classList.add('py-4');
         }
