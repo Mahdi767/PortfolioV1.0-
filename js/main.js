@@ -22,6 +22,43 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtnMobile.addEventListener('click', toggleTheme);
     }
 
+    // 1.5 Mobile Menu Logic
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const menuIconBase = document.getElementById('menuIconBase');
+    const menuIconClose = document.getElementById('menuIconClose');
+
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle icons
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIconBase.classList.remove('hidden');
+                menuIconBase.classList.add('block');
+                menuIconClose.classList.remove('block');
+                menuIconClose.classList.add('hidden');
+            } else {
+                menuIconBase.classList.remove('block');
+                menuIconBase.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+                menuIconClose.classList.add('block');
+            }
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconBase.classList.remove('hidden');
+                menuIconBase.classList.add('block');
+                menuIconClose.classList.remove('block');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+    }
+
     // 2. Scroll Reveal Animation Setup
     const reveals = document.querySelectorAll('.reveal');
 
@@ -79,3 +116,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+

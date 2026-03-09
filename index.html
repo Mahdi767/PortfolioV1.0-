@@ -77,12 +77,29 @@
                 </button>
             </div>
             
-            <!-- Mobile Theme Toggle -->
+            <!-- Mobile Controls -->
             <div class="md:hidden flex items-center">
-                 <button id="themeToggleMobile" class="p-2 mr-2 rounded-lg text-brand-lightTextMuted dark:text-brand-darkTextMuted">
+                 <button id="themeToggleMobile" class="p-2 mr-2 rounded-lg text-brand-lightTextMuted dark:text-brand-darkTextMuted hover:text-brand-primary dark:hover:text-brand-primary transition-colors">
                     <svg id="sunIconMobile" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                     <svg id="moonIconMobile" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                 </button>
+                <button id="mobileMenuBtn" aria-label="Toggle Menu" class="p-2 rounded-lg text-brand-lightTextMuted dark:text-brand-darkTextMuted hover:text-brand-primary dark:hover:text-brand-primary transition-colors">
+                    <!-- Hamburger Icon -->
+                    <svg id="menuIconBase" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <!-- Close Icon -->
+                    <svg id="menuIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 w-full bg-brand-lightBg/95 dark:bg-brand-darkBg/95 backdrop-blur-md border-b border-brand-lightBorder dark:border-brand-darkBorder shadow-xl transition-all duration-300 z-40">
+            <div class="flex flex-col px-6 py-6 space-y-6 text-right">
+                <a href="#about" class="mobile-link text-brand-lightText dark:text-brand-darkText hover:text-brand-primary dark:hover:text-brand-primary transition-colors text-lg font-medium">About</a>
+                <a href="#skills" class="mobile-link text-brand-lightText dark:text-brand-darkText hover:text-brand-primary dark:hover:text-brand-primary transition-colors text-lg font-medium">Skills</a>
+                <a href="#projects" class="mobile-link text-brand-lightText dark:text-brand-darkText hover:text-brand-primary dark:hover:text-brand-primary transition-colors text-lg font-medium">Projects</a>
+                <a href="#education" class="mobile-link text-brand-lightText dark:text-brand-darkText hover:text-brand-primary dark:hover:text-brand-primary transition-colors text-lg font-medium">Education</a>
+                <a href="#contact" class="mobile-link text-brand-lightText dark:text-brand-darkText hover:text-brand-primary dark:hover:text-brand-primary transition-colors text-lg font-medium">Contact</a>
             </div>
         </div>
     </nav>
